@@ -48,7 +48,7 @@ analysis that supported your conclusions.
 
 ## Why should I care?
 
-## For science
+### For science
 
 Researchers -- especially within cognitive
 science and psychology -- are increasingly
