@@ -5,8 +5,8 @@
 Curious about how living documents and reproducible
 reports could help your research? This repo contains
 a workshop walkthrough about how
-[R markdown](!https://rmarkdown.rstudio.com/)
-and [Jupyter notebooks](!http://jupyter.org/) can
+[R markdown](https://rmarkdown.rstudio.com/)
+and [Jupyter notebooks](http://jupyter.org/) can
 enrich your research workflow.
 
 ## What are "living documents" and "reproducible reports"?
@@ -55,8 +55,7 @@ science and psychology -- are increasingly
 interested in promoting transparency and
 reproducibility. There are [badges
 that researchers can earn for sharing their
-data and materials]
-(!https://cos.io/our-services/open-science-badges/)
+data and materials](https://cos.io/our-services/open-science-badges/)
 that promote the prominence of open science,
 and some journals even require data and
 code sharing now.
@@ -107,6 +106,6 @@ served your own Jupyter instance in the cloud.
 
 If you'd like something more permanent, feel
 free to fork the repository or download the files!
-The beauty of R markdown and Juptyer notebooks lies
+The beauty of R markdown and Jupyter notebooks lies
 in their flexibility -- so experiment until you
 find what works best for you!
