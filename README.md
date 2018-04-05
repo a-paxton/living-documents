@@ -82,7 +82,7 @@ away from the problem and will have to spend
 valuable time puzzling through the traces that
 then-past-you created. Do future-you a favor!
 
-### The bottom line
+### For your sanity *and* science
 
 A transformative way to think about this is
 to see that the effort you put in for helping
