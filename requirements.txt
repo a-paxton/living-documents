@@ -1,3 +1,2 @@
-pandas==0.21
-numpy==1.11
--e .
+pandas==0.21.1
+numpy==1.11.3
