@@ -109,3 +109,12 @@ free to fork the repository or download the files!
 The beauty of R markdown and Jupyter notebooks lies
 in their flexibility -- so experiment until you
 find what works best for you!
+
+## Other examples
+
+* A few that I've done:
+  * An early one for a research paper: https://github.com/a-paxton/emotion-dynamics
+  * One from a poster in 2016: https://github.com/a-paxton/explaining-mechanisms-of-global-warming
+  * One for a methods manuscript that's under review: https://github.com/nickduran/align-linguistic-alignment
+  * One for a 2017 paper: https://github.com/a-paxton/dual-conversation-constraints
+* A gallery of interesting Jupyter notebooks: https://github.com/jupyter/jupyter/wiki/A-gallery-of-interesting-Jupyter-Notebooks
