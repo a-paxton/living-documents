@@ -1,0 +1,58 @@
+---
+title: "R markdown example"
+author: "A. Paxton"
+output: html_document
+---
+
+This is an example R markdown file, created as part of the living documents and reproducible reports workshop.The GitHub repository for this workshop is available here: https://github.com/a-paxton/living-documents
+
+In this R markdown file, we'll analyze the data that we generated with our Jupyter notebook (`/jupyter-notebooks/jupyter_notebook-fake_experiment_data_generator.ipynb`).
+
+**Created by:** A. Paxton (University of California, Berkeley)
+
+**Date last modified**: 05 April 2018
+
+***
+
+# Preliminaries
+
+```{r preliminaries}
+
+# clear the workspace
+rm(list=ls())
+
+# install and/or load packages
+source('r_library_installation.r')
+
+```
+
+```{r}
+
+# load in the dataset
+experiment_df = read.table('../data/simulated_experiment_data-original.csv',
+                           sep=',', header=TRUE)
+
+```
+
+
+# Plotting
+
+```{r}
+
+```
+
+# Data exploration
+
+```{r}
+
+
+
+```
+
+
+# Data analysis
+
+```{r}
+
+```
+
