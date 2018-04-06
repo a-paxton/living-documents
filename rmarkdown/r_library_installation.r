@@ -6,7 +6,8 @@
 
 # list of required packages
 required_packages = c(
-  'ggplot2'
+  'ggplot2',
+  'dplyr'
 )
 
 # install missing packages (adapted from <http://stackoverflow.com/a/4090208>)

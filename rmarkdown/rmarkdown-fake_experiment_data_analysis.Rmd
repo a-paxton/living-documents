@@ -16,6 +16,8 @@ In this R markdown file, we'll analyze the data that we generated with our Jupyt
 
 # Preliminaries
 
+First, we'll clear our workspace and make sure that we have all of the packages we need.
+
 ```{r preliminaries}
 
 # clear the workspace
@@ -26,33 +28,181 @@ source('r_library_installation.r')
 
 ```
 
-```{r}
+Once that's done, we'll load in the dataset that we generated in using the Jupyter notebook.
+
+```{r load-data}
 
 # load in the dataset
 experiment_df = read.table('../data/simulated_experiment_data-original.csv',
                            sep=',', header=TRUE)
 
-```
-
-
-# Plotting
-
-```{r}
+# convert factor variables to factor
+experiment_df = experiment_df %>% ungroup() %>%
+  mutate(condition = as.factor(condition))
 
 ```
 
-# Data exploration
+***
 
-```{r}
+# Data checks
 
+Before we get moving, let's make sure that our data look like we expect them to look.
+
+```{r print-data-header}
+
+# check out the first few rows of data
+head(experiment_df)
+
+```
+
+We can also get some summary stats on our dataset.
+
+```{r print-summary-stats}
+
+# get some basic information about each variable
+summary(experiment_df)
+
+```
+
+## Plotting
+
+We're always encouraged to take a look at our data as part of our data checks. R markdown allows you to add those useful plots right into your living documents and reproducible reports so that everyone gets to see how lovely your data are.
+
+You can make your plots pretty basic:
+
+```{r plot-negative-similarity-distribution}
+
+# how do the negative similarity scores look?
+qplot(negative_word_similarity,
+      data = experiment_df,
+      geom = "histogram",
+      bins = 20)
+
+```
+
+Or you can make them more informative:
+
+```{r plot-positive-similarity-distribution}
+
+# how about positive similarity scores by condition?
+ggplot(data = experiment_df,
+       aes(x = positive_word_similarity,
+           color = condition)) +
+  geom_density() +
+  labs(x = 'Positive word similarity',
+       y = 'Density',
+       color = 'Condition') +
+  scale_color_manual(values=c('red','blue'),
+                     breaks = c(0, 1),
+                    labels=c('Commiseration', 'Celebration'))
+```
+
+Making your plots polished at first might take a bit longer, but providing as much information as possible to yourself while creating a living document allows you to more easily refresh your memory after a break *and* have to do less cleanup when you want to share it as a reproducible report.
+
+***
+
+# Participant information
+
+We can use living documents to get to know our data and to easily provide the kind of information we'd need to share in an eventual manuscript. For instance, you can easily re-calculate the total number of participants (or, in our case, dyads) and their distribution across conditions.
+
+## How many total dyads did we have?
+
+```{r unique-dyad-IDs}
+
+# figure out what unique dyad IDs we have
+unique_dyads = experiment_df %>% ungroup() %>%
+  select(dyad_ID) %>%
+  distinct()
+
+# display the unique dyad IDs
+unique_dyads$dyad_ID
+
+```
+
+Instead of just displaying numbers, we can also get R to print it out in text for us.
+
+```{r unique-dyad-count}
+
+# how many dyads did we have?
+paste0("Total dyads: ",length(unique_dyads$dyad_ID))
+
+```
+
+## How many dyads were in each condition?
+
+```{r condition-information}
+
+# break down the data by condition
+condition_dyads = experiment_df %>% ungroup() %>%
+  select(condition, dyad_ID) %>%
+  distinct()
+
+# display condition information
+condition_dyads
+
+```
+
+```{r condition-dyad-counts}
+
+# get total condition counts
+condition_counts = condition_dyads %>% ungroup() %>%
+  group_by(condition) %>%
+  summarise(dyad_counts = n())
+
+# display it
+condition_counts
+
+```
+
+Or, again, we can display it a bit more nicely:
+
+```{r print-conditions-nicely}
+
+# get dyads in each conditions
+commiseration_dyads = condition_counts %>% ungroup() %>%
+  filter(condition==0) %>%
+  .$dyad_counts
+celebration_dyads = condition_counts %>% ungroup() %>%
+  filter(condition==1) %>%
+  .$dyad_counts
+
+# print each one
+paste0('Total dyads in commiseration condition: ',
+       commiseration_dyads)
+paste0('Total dyads in celebration condition: ',
+       celebration_dyads)
 
 
 ```
 
+
+***
 
 # Data analysis
 
-```{r}
+Just like with Jupyter, we can get help information from each cell. If we want to perform an ANOVA, for example, we can get some help text on how to use the function:
+
+```{r check-anova-call}
+
+?anova
 
 ```
 
+It's a good thing we checked -- because that's not the right call! It looks like we need this one:
+
+```{r check-aov-call}
+
+?aov
+
+```
+
+Now that we've got the call down, let's run our model!
+
+```{r data-analysis}
+
+summary(aov(rapport ~ negative_word_similarity * positive_word_similarity * condition, 
+            data = experiment_df))
+
+```
+
+It looks like we've got two main effects: Using more similar amounts of negative words and being involved in the commiseration condition are both associated with higher rapport.
