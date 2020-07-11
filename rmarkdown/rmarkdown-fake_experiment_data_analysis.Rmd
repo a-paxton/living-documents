@@ -40,8 +40,9 @@ notebook).
 ```{r load-data}
 
 # load in the dataset
-experiment_df = read.table('../data/simulated_experiment_data-original.csv',
-                           sep=',', header=TRUE)
+experiment_df = read.table('../data/simulated_experiment_data.csv',
+                           sep = ',',
+                           header = TRUE)
 
 # convert factor variables to factor
 experiment_df = experiment_df %>% ungroup() %>%
