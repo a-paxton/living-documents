@@ -28,14 +28,20 @@ we need.
 # clear the workspace
 rm(list=ls())
 
-# install and/or load packages
+# install and/or load packages specified in another file
 source('r_library_installation.r')
 
 ```
 
+The `source()` function allows us to execute code included in another file of R
+code. It's a handy function; if you use it, remember to use the relative or
+absolute file path to it. (In other words, it will only look in the specific
+directory for it, so if you don't include a different directory, it will only
+look or a file in the working directory.)
+
 Once that's done, we'll load in the toy dataset from this repository  (generated
-in the `jupyter_notebook-fake_experiment_data_generator.ipynb` Jupyter
-notebook).
+in the `jupyter-notebooks/jupyter_notebook-fake_experiment_data_generator.ipynb`
+Jupyter notebook).
 
 ```{r load-data}
 
