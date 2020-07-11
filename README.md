@@ -144,14 +144,17 @@ more on RStudio, check out the "Further reading and more examples" section (or
 just play around---remember, no matter what you do, you can't permanently ruin a
 Binder instance, since you can just get a new one).
 
-In the `rmarkdown` directory, you'll find two R markdown files:
+In the `rmarkdown` directory, you'll find three files:
 
 * `rmarkdown-basic.Rmd`: Start here. Playing around with this file will give you
-  a very basic introduction to the R markdown format.
+  a very basic introduction to the R markdown format and its components.
 
 * `rmarkdown-fake_experiment_data_analysis.Rmd`: Once you're done with the basic
   introduction, try this more realistic (but still toy) R markdown. It will
   demonstrate how you might structure a reproducible report.
+
+* `r_library_installation.r`: This file is called by the toy reproducible report
+  to install required libraries.
 
 ## Further reading and more examples
 
