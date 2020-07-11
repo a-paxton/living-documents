@@ -146,6 +146,12 @@ paste0("Total dyads: ",length(unique_dyads$dyad_ID))
 
 ```
 
+We can also call variable printouts in the text of our reproducible reports.
+For example, we have `r length(unique_dyads$dyad_ID)` total dyads in our sample.
+
+(Note that the code will continue to show up in the RStudio window, but it will
+be replaced by the correct value in the knitted file.)
+
 ## How many dyads were in each condition?
 
 ```{r condition-information}
