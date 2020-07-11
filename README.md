@@ -156,6 +156,27 @@ In the `rmarkdown` directory, you'll find three files:
 * `r_library_installation.r`: This file is called by the toy reproducible report
   to install required libraries.
 
+### Jupyter notebooks (directory: `jupyter-notebooks`)
+
+Running the Jupyter notebooks is much more straightforward than opening the R
+markdown files. To open, simply click on the name of the file, and it will
+open the Jupyter notebook in a new tab.
+
+In this directory, you'll find three files:
+
+* `jupyter_notebook-basic.ipynb`: Start here. Playing around with this file will
+  give you a very basic introduction to the Jupyter notebook format and its
+  components.
+
+* `jupyter_notebook-fake_experiment_data_generator.ipynb`: Once you're done with
+  introduction, try this more realistic (but still toy) R markdown. The
+  demonstration will walk you through using the notebook by generating toy data
+  (provided also by default in the `data/` directory) used by various R markdown
+  files.
+
+* `test-external-script.py`: A standalone Python script that is used in the
+  basic Jupyter notebook.
+
 ## Further reading and more examples
 
 * About RStudio and R markdown:
