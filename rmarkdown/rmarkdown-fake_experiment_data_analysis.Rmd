@@ -237,6 +237,7 @@ summary(aov(rapport ~ negative_word_similarity * positive_word_similarity * cond
 
 ```
 
-It looks like we've got two main effects: Using more similar amounts of negative
-words and being involved in the commiseration condition are both associated with
-higher rapport.
+It looks like we've got two significant main effects: Using more similar amounts
+of negative words and being involved in the commiseration condition are both
+associated with higher rapport.
+
