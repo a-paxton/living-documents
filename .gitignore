@@ -1,3 +1,8 @@
 *.ipynb_checkpoints
 .DS_Store
 *.PDF
+*_cache
+*.log
+*.knit.md
+*.utf8.md
+*.tex
