@@ -34,11 +34,11 @@ processing, and analysis that supported your conclusions.
 
 "Reproducible manuscripts" are a specific type of reproducible report---one that
 has as its output a submission-ready manuscript. For a reproducible manuscript,
-you include code "chunks" or "blocks" that run your data analysis
-behind the scenes, along with the actual manuscript text (including figures,
-tables, and even references). Mastering the reproducible manuscript means no
-more tedious (and error-prone) copying and pasting of your statistics---they'll
-all recompile and render perfectly each time you compile your manuscript.
+you include code "chunks" or "blocks" that run your data analysis behind the
+scenes, along with the actual manuscript text (including figures, tables, and
+even references). Mastering the reproducible manuscript means no more tedious
+(and error-prone) copying and pasting of your statistics---they'll all recompile
+and render perfectly each time you compile your manuscript.
 
 ## Why should I care?
 
@@ -60,11 +60,11 @@ possible.
 By using reproducible manuscripts, you'll take the added step of helping
 minimize transcription errors in your manuscript's statistics. Given the
 surprisingly high rate of statistical errors in scientific articles generally
-and psychology articles specifically (see Bakker & Wicherts, 2011,
-*Behavior Research Methods*), using reproducible manuscripts can help prevent
-simple errors in transcription from entering the scientific field---especially
-ones that (as noted by Bakker & Wicherts) could lead to qualitatively
-different results.
+and psychology articles specifically (see Bakker & Wicherts, 2011, *Behavior
+Research Methods*), using reproducible manuscripts can help prevent simple
+errors in transcription from entering the scientific field---especially ones
+that (as noted by Bakker & Wicherts) could lead to qualitatively different
+results.
 
 ### For your sanity
 
