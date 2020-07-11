@@ -221,6 +221,7 @@ In this directory, you'll find three files:
   * More on knitr (a foundation for R markdown): http://kbroman.org/knitr_knutshell/
   * Getting started with RStudio: https://www.oreilly.com/library/view/getting-started-with/9781449314798/ch01.html
 * About Jupyter:
+  * Jupyter's introductory documentation to the notebook: https://jupyter-notebook.readthedocs.io/en/stable/notebook.html
   * Jupyter notebook cheat sheet: https://s3.amazonaws.com/assets.datacamp.com/blog_assets/Jupyter_Notebook_Cheat_Sheet.pdf
   * A gallery of interesting Jupyter notebooks: https://github.com/jupyter/jupyter/wiki/A-gallery-of-interesting-Jupyter-Notebooks
 * A few living documents and reproducible reports that I've done (with varying
