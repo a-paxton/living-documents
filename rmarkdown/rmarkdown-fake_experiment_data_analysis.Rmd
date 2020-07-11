@@ -4,37 +4,51 @@ author: "A. Paxton"
 output: html_document
 ---
 
-This is an example R markdown file, created as part of the living documents and reproducible reports workshop.The GitHub repository for this workshop is available here: https://github.com/a-paxton/living-documents
+This is an example R markdown file, created as part of the living documents and
+reproducible reports workshop.The GitHub repository for this workshop is
+available here: https://github.com/a-paxton/living-documents
 
-In this R markdown file, we'll analyze the data that we generated with our Jupyter notebook (`/jupyter-notebooks/jupyter_notebook-fake_experiment_data_generator.ipynb`).
+In this R markdown file, we'll analyze the toy data provided in the repository,
+which is the same data that we generated with our example Jupyter notebook
+(`/jupyter-notebooks/jupyter_notebook-fake_experiment_data_generator.ipynb`).
 
-**Created by:** A. Paxton (University of California, Berkeley)
+**Created by:** A. Paxton (University of Connecticut)
 
-**Date last modified**: 05 April 2018
+**Date last modified**: 10 July 2020
 
 ***
 
 # Preliminaries
 
-First, we'll clear our workspace and make sure that we have all of the packages we need.
+First, we'll clear our workspace and make sure that we have all of the packages
+we need.
 
 ```{r preliminaries}
 
 # clear the workspace
 rm(list=ls())
 
-# install and/or load packages
+# install and/or load packages specified in another file
 source('r_library_installation.r')
 
 ```
 
-Once that's done, we'll load in the dataset that we generated in using the Jupyter notebook.
+The `source()` function allows us to execute code included in another file of R
+code. It's a handy function; if you use it, remember to use the relative or
+absolute file path to it. (In other words, it will only look in the specific
+directory for it, so if you don't include a different directory, it will only
+look or a file in the working directory.)
+
+Once that's done, we'll load in the toy dataset from this repository  (generated
+in the `jupyter-notebooks/jupyter_notebook-fake_experiment_data_generator.ipynb`
+Jupyter notebook).
 
 ```{r load-data}
 
 # load in the dataset
-experiment_df = read.table('../data/simulated_experiment_data-original.csv',
-                           sep=',', header=TRUE)
+experiment_df = read.table('../data/simulated_experiment_data.csv',
+                           sep = ',',
+                           header = TRUE)
 
 # convert factor variables to factor
 experiment_df = experiment_df %>% ungroup() %>%
@@ -46,7 +60,8 @@ experiment_df = experiment_df %>% ungroup() %>%
 
 # Data checks
 
-Before we get moving, let's make sure that our data look like we expect them to look.
+Before we get moving, let's make sure that our data look like we expect them to
+look.
 
 ```{r print-data-header}
 
@@ -66,7 +81,9 @@ summary(experiment_df)
 
 ## Plotting
 
-We're always encouraged to take a look at our data as part of our data checks. R markdown allows you to add those useful plots right into your living documents and reproducible reports so that everyone gets to see how lovely your data are.
+We're always encouraged to take a look at our data as part of our data checks. R
+markdown allows you to add those useful plots right into your living documents
+and reproducible reports so that everyone gets to see how lovely your data are.
 
 You can make your plots pretty basic:
 
@@ -97,13 +114,19 @@ ggplot(data = experiment_df,
                     labels=c('Commiseration', 'Celebration'))
 ```
 
-Making your plots polished at first might take a bit longer, but providing as much information as possible to yourself while creating a living document allows you to more easily refresh your memory after a break *and* have to do less cleanup when you want to share it as a reproducible report.
+Making your plots polished at first might take a bit longer, but providing as
+much information as possible to yourself while creating a living document allows
+you to more easily refresh your memory after a break *and* have to do less
+cleanup when you want to share it as a reproducible report.
 
 ***
 
 # Participant information
 
-We can use living documents to get to know our data and to easily provide the kind of information we'd need to share in an eventual manuscript. For instance, you can easily re-calculate the total number of participants (or, in our case, dyads) and their distribution across conditions.
+We can use living documents to get to know our data and to easily provide the
+kind of information we'd need to share in an eventual manuscript. For instance,
+you can easily re-calculate the total number of participants (or, in our case,
+dyads) and their distribution across conditions.
 
 ## How many total dyads did we have?
 
@@ -119,7 +142,8 @@ unique_dyads$dyad_ID
 
 ```
 
-Instead of just displaying numbers, we can also get R to print it out in text for us.
+Instead of just displaying numbers, we can also get R to print it out in text
+for us.
 
 ```{r unique-dyad-count}
 
@@ -127,6 +151,12 @@ Instead of just displaying numbers, we can also get R to print it out in text fo
 paste0("Total dyads: ",length(unique_dyads$dyad_ID))
 
 ```
+
+We can also call variable printouts in the text of our reproducible reports.
+For example, we have `r length(unique_dyads$dyad_ID)` total dyads in our sample.
+
+(Note that the code will continue to show up in the RStudio window, but it will
+be replaced by the correct value in the knitted file.)
 
 ## How many dyads were in each condition?
 
@@ -180,7 +210,8 @@ paste0('Total dyads in celebration condition: ',
 
 # Data analysis
 
-Just like with Jupyter, we can get help information from each cell. If we want to perform an ANOVA, for example, we can get some help text on how to use the function:
+We can also get help information from each cell. If we want to perform an ANOVA,
+for example, we can get some help text on how to use the function:
 
 ```{r check-anova-call}
 
@@ -188,7 +219,8 @@ Just like with Jupyter, we can get help information from each cell. If we want t
 
 ```
 
-It's a good thing we checked -- because that's not the right call! It looks like we need this one:
+It's a good thing we checked -- because that's not the right call! It looks like
+we need this one:
 
 ```{r check-aov-call}
 
@@ -200,9 +232,12 @@ Now that we've got the call down, let's run our model!
 
 ```{r data-analysis}
 
-summary(aov(rapport ~ negative_word_similarity * positive_word_similarity * condition, 
+summary(aov(rapport ~ negative_word_similarity * positive_word_similarity * condition,
             data = experiment_df))
 
 ```
 
-It looks like we've got two main effects: Using more similar amounts of negative words and being involved in the commiseration condition are both associated with higher rapport.
+It looks like we've got two significant main effects: Using more similar amounts
+of negative words and being involved in the commiseration condition are both
+associated with higher rapport.
+

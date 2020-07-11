@@ -1,3 +1,11 @@
 *.ipynb_checkpoints
-*/.ipynb_checkpoints/
-*/*/.ipynb_checkpoints/
+.DS_Store
+*_cache
+*.log
+*.knit.md
+*.utf8.md
+*.tex
+*.aux
+*.fff
+*.html
+*.ttt

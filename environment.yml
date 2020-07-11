@@ -1,0 +1,13 @@
+channels:
+  - conda-forge
+dependencies:
+  - r-base=3.6
+  - r-tidyverse
+  - r-devtools
+  - r-tinytex
+  - r-ggplot2
+  - r-dplyr
+  - r-codetools
+  - rpy2
+  - pandas
+  - numpy
