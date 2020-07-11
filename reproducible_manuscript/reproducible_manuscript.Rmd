@@ -75,7 +75,6 @@ rm(list=ls())
 # call in our required libraries
 source('../rmarkdown/r_library_installation.r')
 library(papaja)
-library(pander)
 
 ```
 
