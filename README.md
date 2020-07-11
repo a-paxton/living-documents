@@ -52,10 +52,12 @@ prominence of open science, and some journals even require data and code sharing
 now.
 
 Providing an explicit accounting of your data and code practices can help
-demonstrate the value of your work. As an added bonus, if there's future
-interest in replicating your work, providing your code openly can help those
-future replication efforts use methods as close to your original work as
-possible.
+demonstrate the value of your work. If you share your data and your code, you're
+promoting immediate computational reproducibility by anyone (especially if you
+use open-source programming languages and packages). As an added bonus, if
+there's future interest in directly or conceptually replicating your work in new
+experiments, providing your code openly can help those future replication
+efforts use methods as close to your original work as possible.
 
 By using reproducible manuscripts, you'll take the added step of helping
 minimize transcription errors in your manuscript's statistics. Given the
