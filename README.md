@@ -119,6 +119,40 @@ repository or download the files. The beauty of R markdown and Jupyter notebooks
 lies in their flexibility -- so experiment until you find what works best for
 you!
 
+### R markdown (directory: `rmarkdown`)
+
+To run the R markdown files, you'll need to start RStudio in the environment. If
+you're not familiar with [RStudio](https://rstudio.com/products/rstudio/), it's
+an *integrated development environment* or IDE that facilitates programming in a
+more user-friendly setup. (If you're familiar with MATLAB, RStudio will give you
+a very similar programming experience in R to the one that you're used to seeing
+in MATLAB.)
+
+To start RStudio, click the "New" button in the upper righthand corner. Select
+"RStudio" from the drop-down menu that appears. A new tab will open within your
+browser that includes RStudio. You can open files by selecting the "File" menu
+in the top-left corner, selecting "Open", and navigating to the appropriate
+file. When you have this file open, it will open a new pane in the top-left
+section of the RStudio window. This new pane is called the *source* pane, and it
+will be where you can write and save your code. Below the source pane is the
+*console* pane, where you can run code. The top-right pane is the *environment*
+pane, which shows the variables and custom functions specified in your
+directory. The lower-right pane is the *files*/*plot*/*help* pane, which serves
+a variety of functions: showing files in the current directory, displaying
+plots, and rendering help text (depending on which tab you've selected). For
+more on RStudio, check out the "Further reading and more examples" section (or
+just play around---remember, no matter what you do, you can't permanently ruin a
+Binder instance, since you can just get a new one).
+
+In the `rmarkdown` directory, you'll find two R markdown files:
+
+* `rmarkdown-basic.Rmd`: Start here. Playing around with this file will give you
+  a very basic introduction to the R markdown format.
+
+* `rmarkdown-fake_experiment_data_analysis.Rmd`: Once you're done with the basic
+  introduction, try this more realistic (but still toy) R markdown. It will
+  demonstrate how you might structure a reproducible report.
+
 ## Further reading and more examples
 
 * R markdown cheat sheet: https://rstudio.com/wp-content/uploads/2015/02/rmarkdown-cheatsheet.pdf
