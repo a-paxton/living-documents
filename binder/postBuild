@@ -1,1 +1,9 @@
+#!/bin/bash
+# set bash options:
+#  e -> Exit on first command failing
+#  x -> Print commands as they are executing (be careful around secrets!)
+#  u -> Exit when using undefined variables
+#  o pipefail -> Consider pipes to have failed more strictly than default
+set -exuo pipefail
+
 pip install rpy2
