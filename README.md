@@ -101,7 +101,13 @@ top of the README file. [Binder](https://mybinder.org/) is a way of converting a
 GitHub repository into a cloud-based executable instance, complete with all of
 the files and data in the repository. Just click the button, and you'll be able
 to start working on, executing, and editing the code  immediately---no
-installation required!
+installation required! Be patient the first time you launch it; it may take
+a few minutes to be ready for you to start.
+
+Once your Binder instance is started, you can navigate the directory in the
+browser window much in the same way that you can navigate files on your local
+computer. You can click file or folder names to open them. More on opening
+specific files types are included below in the instructions for each of them.
 
 You're able to come back and launch a new Binder instance of the code any time
 you'd like. Keep in mind that none of your changes will be saved after the
