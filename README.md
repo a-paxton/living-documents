@@ -156,6 +156,42 @@ In the `rmarkdown` directory, you'll find three files:
 * `r_library_installation.r`: This file is called by the toy reproducible report
   to install required libraries.
 
+### Reproducible manuscripts (directory: `reproducible_manuscript`)
+
+We'll be using RStudio again for our reproducible manuscripts, so follow the
+instructions above to open the files through RStudio. I would strongly
+recommend working on the basic R markdown before starting this section, unless
+you are already familiar with R markdown.
+
+In this directory, you'll find a number of files:
+
+* `prep_for_reproducible_manuscript.R`: **Open and run this script in its
+  entirety before beginning the rest of the reproducible manuscripts tutorial.**
+  You will not be able to proceed with this tutorial without running this script
+  first. This script will download `papaja` and set up the TeX distribution with
+  `tinytex`. You can open it in RStudio, highlight everything in the file, and
+  click "Run" (or press command+enter [Mac] or ctrl+enter [PC/Linux]).
+  **Remember**: You must run this *each time* you open a new Binder instance,
+  since it *does not permanently store* the changes that you make to the
+  instance.
+
+* `reproducible_manuscript.Rmd`: *After* you've run the
+  `prep_for_reproducible_manuscript.R` file for the first time since opening
+  your latest Binder instance, this R markdown will provide an example of a
+  reproducible manuscript written in R with `papaja`. When you compile it, you
+  will see a few new files with the same name (`reproducible_manuscript`) but
+  with new extensions. These files will include LaTeX log files, intermediary
+  manuscript files, and (given the specifications provided in our example) a
+  final PDF of the manuscript.
+
+* `references.bib`: This is a BibTeX-formatted file of references for the
+  reproducible manuscript. As with LaTeX, you may include more references in the
+  `.bib` file than you cite in your manuscript, and only those that you cite
+  will be rendered in the reference list. (If you're not used to using BibTeX
+  for reference management, Google Scholar offers it as an option when you click
+  the "Cite" button for a Google Scholar entry; just look for the "BibTex" link
+  at the bottom of the pop-up.)
+
 ### Jupyter notebooks (directory: `jupyter-notebooks`)
 
 Running the Jupyter notebooks is much more straightforward than opening the R
