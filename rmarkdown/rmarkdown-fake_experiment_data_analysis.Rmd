@@ -8,8 +8,8 @@ This is an example R markdown file, created as part of the living documents and
 reproducible reports workshop.The GitHub repository for this workshop is
 available here: https://github.com/a-paxton/living-documents
 
-In this R markdown file, we'll analyze the data that we generated with our
-Jupyter notebook
+In this R markdown file, we'll analyze the toy data provided in the repository,
+which is the same data that we generated with our example Jupyter notebook
 (`/jupyter-notebooks/jupyter_notebook-fake_experiment_data_generator.ipynb`).
 
 **Created by:** A. Paxton (University of Connecticut)
