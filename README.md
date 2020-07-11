@@ -165,7 +165,7 @@ instructions above to open the files through RStudio. I would strongly
 recommend working on the basic R markdown before starting this section, unless
 you are already familiar with R markdown.
 
-In this directory, you'll find a number of files:
+In this directory, you'll find a number of files, including:
 
 * `prep_for_reproducible_manuscript.R`: **Open and run this script in its
   entirety before beginning the rest of the reproducible manuscripts tutorial.**
@@ -184,7 +184,7 @@ In this directory, you'll find a number of files:
   will see a few new files with the same name (`reproducible_manuscript`) but
   with new extensions. These files will include LaTeX log files, intermediary
   manuscript files, and (given the specifications provided in our example) a
-  final PDF of the manuscript.
+  final PDF of the manuscript and figures (already included in this repository).
 
 * `references.bib`: This is a BibTeX-formatted file of references for the
   reproducible manuscript. As with LaTeX, you may include more references in the
