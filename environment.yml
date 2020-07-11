@@ -7,6 +7,7 @@ dependencies:
   - r-tinytex
   - r-ggplot2
   - r-dplyr
+  - r-codetools
   - rpy2
   - pandas
   - numpy
