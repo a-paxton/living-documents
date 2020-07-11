@@ -94,14 +94,24 @@ into reproducible reports. If you're taking good notes and adding comments to
 your code in your living document *while* you're doing the research, all you
 need to do is publish the document after you're done!
 
-## Workshop materials
+## Workshop materials: A guide
 
-To run the workshop materials, just click on the Binder button above. From
-there, you'll be served your own executable instance right there from the cloud.
+To run the workshop materials, just click on the "launch binder" button at the
+top of the README file. [Binder](https://mybinder.org/) is a way of converting a
+GitHub repository into a cloud-based executable instance, complete with all of
+the files and data in the repository. Just click the button, and you'll be able
+to start working on, executing, and editing the code  immediately---no
+installation required!
 
-If you'd like something more permanent, feel free to fork the repository or
-download the files! The beauty of R markdown and Jupyter notebooks lies in their
-flexibility -- so experiment until you find what works best for you!
+You're able to come back and launch a new Binder instance of the code any time
+you'd like. Keep in mind that none of your changes will be saved after the
+Binder instance is closed; each new Binder instance will only load with the
+files and specifications exactly as they are in the repository.
+
+However, if you'd like something more permanent, feel free to fork the
+repository or download the files. The beauty of R markdown and Jupyter notebooks
+lies in their flexibility -- so experiment until you find what works best for
+you!
 
 ## Other examples
 
