@@ -119,13 +119,17 @@ repository or download the files. The beauty of R markdown and Jupyter notebooks
 lies in their flexibility -- so experiment until you find what works best for
 you!
 
-## Other examples
+## Further reading and more examples
 
+* R markdown cheat sheet: https://rstudio.com/wp-content/uploads/2015/02/rmarkdown-cheatsheet.pdf
+* Jupyter notebook cheat sheet: https://s3.amazonaws.com/assets.datacamp.com/blog_assets/Jupyter_Notebook_Cheat_Sheet.pdf
+* RStudio's webinar on reproducible reporting: https://rstudio.com/resources/webinars/reproducible-reporting/
+* More on knitr (a foundation for R markdown): http://kbroman.org/knitr_knutshell/
+* A gallery of interesting Jupyter notebooks: https://github.com/jupyter/jupyter/wiki/A-gallery-of-interesting-Jupyter-Notebooks
 * A few living documents and reproducible reports that I've done (with varying
   levels of sophistication):
   * An early one for a research paper: https://github.com/a-paxton/emotion-dynamics
   * One from a poster in 2016: https://github.com/a-paxton/explaining-mechanisms-of-global-warming
-  * A few for a trying out a Python package: https://github.com/nickduran/align-linguistic-alignment
+  * A few for testing and trying out a Python package: https://github.com/nickduran/align-linguistic-alignment
   * One for a 2017 paper: https://github.com/a-paxton/dual-conversation-constraints
-* A reproducible manuscript for a CogSci 2018 proceedings paper: https://github.com/a-paxton/perception-memory-coordination/tree/master/study_1-cogsci2018
-* A gallery of interesting Jupyter notebooks: https://github.com/jupyter/jupyter/wiki/A-gallery-of-interesting-Jupyter-Notebooks
+  * A reproducible manuscript for a CogSci 2018 proceedings paper: https://github.com/a-paxton/perception-memory-coordination/tree/master/study_1-cogsci2018
