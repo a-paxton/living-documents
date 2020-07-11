@@ -155,11 +155,14 @@ In the `rmarkdown` directory, you'll find two R markdown files:
 
 ## Further reading and more examples
 
-* R markdown cheat sheet: https://rstudio.com/wp-content/uploads/2015/02/rmarkdown-cheatsheet.pdf
-* Jupyter notebook cheat sheet: https://s3.amazonaws.com/assets.datacamp.com/blog_assets/Jupyter_Notebook_Cheat_Sheet.pdf
-* RStudio's webinar on reproducible reporting: https://rstudio.com/resources/webinars/reproducible-reporting/
-* More on knitr (a foundation for R markdown): http://kbroman.org/knitr_knutshell/
-* A gallery of interesting Jupyter notebooks: https://github.com/jupyter/jupyter/wiki/A-gallery-of-interesting-Jupyter-Notebooks
+* About RStudio and R markdown:
+  * R markdown cheat sheet: https://rstudio.com/wp-content/uploads/2015/02/rmarkdown-cheatsheet.pdf
+  * RStudio's webinar on reproducible reporting: https://rstudio.com/resources/webinars/reproducible-reporting/
+  * More on knitr (a foundation for R markdown): http://kbroman.org/knitr_knutshell/
+  * Getting started with RStudio: https://www.oreilly.com/library/view/getting-started-with/9781449314798/ch01.html
+* About Jupyter:
+  * Jupyter notebook cheat sheet: https://s3.amazonaws.com/assets.datacamp.com/blog_assets/Jupyter_Notebook_Cheat_Sheet.pdf
+  * A gallery of interesting Jupyter notebooks: https://github.com/jupyter/jupyter/wiki/A-gallery-of-interesting-Jupyter-Notebooks
 * A few living documents and reproducible reports that I've done (with varying
   levels of sophistication):
   * An early one for a research paper: https://github.com/a-paxton/emotion-dynamics
