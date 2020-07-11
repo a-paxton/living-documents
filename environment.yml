@@ -5,3 +5,6 @@ dependencies:
   - r-tidyverse
   - r-devtools
   - r-tinytex
+  - rpy2
+  - pandas
+  - numpy
