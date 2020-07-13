@@ -1,6 +1,6 @@
 # Creating living documents and reproducible reports with  R markdown and Jupyter notebooks
 
-[![Binder](http://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/a-paxton/living-documents/dsw2020)
+[![Binder](http://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/a-paxton/living-documents/master)
 
 Curious about how living documents and reproducible reports could help your
 research? This repo contains a workshop walkthrough about how
