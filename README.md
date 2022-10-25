@@ -68,7 +68,7 @@ errors in transcription from entering the scientific field---especially ones
 that (as noted by Bakker & Wicherts) could lead to qualitatively different
 results.
 
-### For your sanity
+### For yourself
 
 Think of this as your present self doing something nice for your future self. If
 your present self takes a few minutes to add some explanatory text, code
@@ -85,7 +85,7 @@ copying-and-pasting all of your descriptive statistics and results back into
 your manuscript. You can get right to addressing those reviewer concerns and get
 that revision out faster.
 
-### For your sanity *and* science
+### For yourself *and* science
 
 A transformative way to think about this is to see that the effort you put in
 for helping your future self can be equally valuable for helping the broader
