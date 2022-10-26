@@ -34,7 +34,7 @@ abstract: |
   <!-- https://tinyurl.com/ybremelq -->
 
 keywords          : "tutorial, papaja, reproducible manuscript, imaginary people, rapport, interaction"
-wordcount         : "887 [Manually update this with the automatic word count printout shown in the RStudio console after you compile]"
+wordcount         : "885 [Manually update this with the automatic word count printout shown in the RStudio console after you compile]"
 
 bibliography      : ["references.bib"]
 
@@ -56,8 +56,8 @@ Even if it's not your very first reproducible manuscript, I hope you find it
 useful.) For this reproducible manuscript, we're going to be relying on the R
 package called `papaja` [@R-papaja]. While you don't need to use it to create a
 reproducible manuscript in R, it's designed specifically to create an
-APA-formatted manuscript---which, if you're taking the 2020 UConn SLAC/NBL Data
-Science Workshop, might be standard formatting for your academic journals of
+APA-formatted manuscript---which, if you're in this workshop with me, 
+might be standard formatting for your academic journals of
 choice.
 
 Here, we're going to write up our formal report on
